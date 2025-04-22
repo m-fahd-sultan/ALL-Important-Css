@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="box float.css">
+</head>
+<body>
+    <div id="box">
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore, consectetur deleniti quaerat aliquam odio debitis quisquam tempore molestias animi totam illo sapiente quis voluptatem quae, sint repellat quibusdam id!</div>
+    <div id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, rerum culpa quas atque consectetur laudantium saepe! Natus laboriosam perspiciatis voluptatum error, ipsam ex at ut, cupiditate nam maxime expedita odio.</div>
+    <div id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima illo necessitatibus ex distinctio, incidunt dolores tempora dolore excepturi voluptas temporibus officiis non possimus perspiciatis vitae ullam assumenda magni eligendi!</div>
+</div>
+
+<style>
+    #box{
+    border: 2px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#box1{
+    width: 200px;
+    min-height: 100px;
+    border: 2px solid red;
+    background-color: blanchedalmond;
+    float: left;
+}
+#box2{
+    width: 200px;
+    min-height: 100px;
+    border: 2px solid green;
+    background-color: pink;
+    float: right;
+}
+#box3{
+    width: 100%;
+    border: 2px solid black;
+    background-color: goldenrod;
+    clear: both;
+}
+/* clear use to avoid overflow in box 1 and box 2*/
+</style>
+
+</body>
+</html>

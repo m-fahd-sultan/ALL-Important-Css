@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            background: tomato;
+            margin: 150px 300px;
+            
+            transform: rotate(30deg);
+            /* transform have many properties like rotate(x,y), skew(x,y),  translate(x,y), scale(x,y), matrix(n,n,n,n,n,n) */
+
+            transform-origin: 20% 50%;
+            /* It show that from where the transform should apply */
+            /* we can give value by x and y (50px 50px) */ 
+        }
+    </style>
+</body>
+</html>

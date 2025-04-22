@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+        <div class="item item4">four</div>
+        <div class="item item5">five</div>
+        <div class="item item6">six</div>
+    </div>
+
+    <style>
+        .container{
+            background-color: #eee;
+            width: 600px;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2, 100px);
+        }
+
+        .item1{background-color: skyblue; order: 1;}
+        .item2{background-color: lightgoldenrodyellow; order:2;}
+        .item3{background-color: seagreen;}
+        .item4{background-color: orange; order: 3;}
+        .item5{background-color: lightgreen;}
+        .item6{background-color: bisque;order: 4;}
+
+        /* Here order is use for position. here 1 is start at last and 2 after 1. */
+    </style>
+</body>
+</html>

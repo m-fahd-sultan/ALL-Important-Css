@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+        <div class="item item4">four Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis non officiis tenetur quibusdam enim saepe voluptatum!</div>
+        <div class="item item5">five</div>
+        <div class="item item6">six Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam iure consequuntur ducimus voluptate quas?</div>
+        <div class="item item7">seven</div>
+        <div class="item item8">eight</div>
+    </div>
+    <style>
+        .container{
+            background-color: gray;
+            border: 2px solid;
+             width: 80%;
+             margin: 70px 0 0 50px;
+             
+             display: grid;
+            grid-template-columns: minmax(150px, 1fr) 1fr 1fr min-content;
+            /* max-content use for size in column or row. It will take size according to content but with no break in content*/
+            /* min-content use for size in column or row. It will take size according to longest word in content*/
+            /* minmax() in column use for to take min size and max size of column. */
+
+            grid-template-rows: repeat(2,minmax(150px, min-content));
+            /* In row we use size as min-content. Now row will take size according to the content. repeat(2, min-content)*/
+            /* We use minmax() to give min size and max size. Here min size is 150px and min-content for take size according to content. */
+            
+            grid-gap: 5px;
+            }
+        .item1{background-color: skyblue;}
+        .item2{background-color: lightgoldenrodyellow;}
+        .item3{background-color: seagreen;}
+        .item4{background-color: orange;}
+        .item5{background-color: lightgreen;}
+        .item6{background-color: bisque;}
+        .item7{background-color: orange;}
+        .item8{background-color: magenta;}
+        </style>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome</h1>
+    <h2>welcome 2</h2>
+    <h3>welcome 3</h3>
+
+    <div class="box"><h4>welcome 4</h4> <h2>welcome div</h2></div>
+
+    <style>
+        :root{
+            --m-color:gray;
+            --f-color:blue;
+            --f-size:48px;
+            /* this is global variables. we can also make local variables by defining them in specific div*/
+
+            /* we make 3 variables here. Now we can use it everywher
+            and if we want to change then we don't need to change it from everywhere
+            we just change it form here and it will automatically apply changes */ 
+        }
+
+        h1{
+            background-color: var(--m-color);
+            color: var(--f-color);
+            font-size: var(--f-size);
+        }
+
+        h3{
+            background-color: var(--m-color);
+        }
+
+        h2{
+            color: var(--f-color);
+        }
+
+        h4{
+            background-color: var(--m-color);
+            color: var(--f-color);
+            font-size: var(--f-size);
+        }
+    </style>
+</body>
+</html>

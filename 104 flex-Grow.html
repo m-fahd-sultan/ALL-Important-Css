@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+    </div>
+    <style>
+        .container{
+            background-color: #eee;
+            width: 50%px;
+            height: 100px;
+            display: flex;
+        }
+        .items{
+            flex-grow: 1;
+        }
+        .item1{background-color: goldenrod; flex-grow: 1;}
+        .item2{background-color: lime; flex-grow: 2;}
+        /* will take the double of flex-grow:1; */
+        .item3{background-color: aquamarine; flex-grow: 1;}
+        /* flex-grow use to take size of remaining div size. To fill the space in div. */
+    </style>
+</body>
+</html>

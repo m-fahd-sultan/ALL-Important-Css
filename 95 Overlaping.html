@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item items1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, voluptas.</div>
+        <div class="item items2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ut?</div>
+        <div class="item items3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta iure, commodi iusto veritatis consectetur eum?</div>
+    </div>
+
+    <style>
+        .container{
+            background-color: #eee;
+            width: 300px;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,150px);
+        }
+        .item{
+            max-width: 150px;
+        }
+        .items1{
+            background-color: greenyellow;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            z-index: 1;
+        }
+        .items2{
+            background-color: orange;
+            grid-column: 1 / span 2;
+            grid-row: 1/span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 2;
+        }
+        .items3{
+            background-color: aquamarine;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: end;
+            justify-self: end;
+        }
+        /* here over gird items are overlaping so we use z-index to adjust all.*/
+    </style>
+</body>
+</html>

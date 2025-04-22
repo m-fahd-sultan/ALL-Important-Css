@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="img1" src="Place Your Image Here (Double Click to Edit)12.png" alt="">
+    <img src="Place Your Image Here (Double Click to Edit)12.png" alt="" class="img2">
+    <img src="Place Your Image Here (Double Click to Edit)12.png" alt="" class="img3">
+    <img src="Place Your Image Here (Double Click to Edit)12.png" alt="" class="img4">
+    <style>
+        .img1{
+            clip-path: circle(20% at 70% 50%);
+            /* use to cut image in circle */
+            /* first 20% is radius of circle and 70% x-axis, 50% y-axis */
+        }
+        .img2{
+            clip-path: ellipse(10% 40% at 50% 50%);
+            /* here first two values 20% and 40% use for horizantal and vertical radius
+            and oher use for x and y axis */
+        }
+        .img3{
+            clip-path: inset(5% 20% 15% 10%);
+            /* inset use for sqare cut
+                here first 5% from top, 20% from right,
+                15% from bottom and 10% from left */
+        }
+
+        .img4{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            /* here for three sides we take for each side x and y axis values. */
+
+            /* use "clippy" website for shapes */
+        }
+    </style>
+</body>
+</html>

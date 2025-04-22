@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quos optio ad iste velit necessitatibus amet voluptatum, tenetur illum, modi molestias corrupti aperiam dolores cumque saepe quibusdam quidem cum tempore.</div>
+    <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sed, nulla sint, recusandae mollitia, culpa beatae corporis ad molestiae reprehenderit voluptates cumque perferendis atque omnis accusantium nobis unde! Numquam, deleniti!</div>
+    <style>
+        .box{
+            width: auto;
+            height: 700px;
+            border: 2px solid;
+            
+            background-image: url(burger.png);
+            
+            background-repeat: round;
+            /* it is used to repeat image. Values are repeat, no-repeat, repeat-x/y, space, round */
+
+            background-position: center bottom;
+            /* use to set position of background-image. Values are Left/right/center top, left/right/center center, left/right/center bottom or by values like 30% 50% */
+
+            /* ***\\\SHORTHAND///*** */
+            background: url(burger.png) round center bottom;
+        }
+
+        .box2{
+            width: auto;
+            height: 700px;
+            border: 2px solid;
+            margin-top: 50px;
+
+            /* ***\\\ Multiple backgrounds ///*** */
+            background-image: url(Vector\ Smart\ Object\ 1.png), url(Vector\ Smart\ Object\ 3.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: 100px 50px, right top;
+
+        }
+
+    </style>
+</body>
+</html>

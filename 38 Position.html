@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+       
+     <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur.</div>
+     <div class="box2">relative</div>
+     <div class="box9">fixed</div>
+     <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.</div>
+    </div>
+
+    <div class="box">
+     <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur.</div>
+     <div class="box5">absolute</div>
+     <div class="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.</div>
+    </div>
+
+    <div class="box">
+        <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur.</div>
+        <div class="box7">sticky</div>
+        <div class="box8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, 
+            autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.</div>
+            <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur
+            </div>
+            <div class="box10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt molestias iure, corrupti modi fugit exercitationem ipsam quaerat, autem asperiores saepe itaque perspiciatis earum velit sequi, magnam porro atque? Alias.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique voluptatem ipsum expedita odio quaerat nemo commodi libero! Explicabo excepturi sit error ipsam deleniti exercitationem eos quia natus debitis consequuntur
+            </div>
+        </div>
+
+
+
+    <style>
+        .box{
+            border: 2px solid;
+            margin-top: 50px;
+            width: auto;
+            min-height: 300px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+
+            position: relative;
+            left: 150px;
+            top: 10px;
+            /*Necessary properties with position are top, bottom, left, right */
+            /* in relative the box will not move any where then we can move it by given values by top,right,bottom and left */
+            
+        }
+
+        .box4{
+            margin-top: 50px;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+
+            position: absolute;
+            left: 50px;
+            top: 400px;
+            /* in absolute it will leave it place and the we can move it by given values in left, top etc.*/
+            /* when we move it then it will move from the screen boders for example if we give value top:100px then it will move form top of the screen */
+
+        }
+
+        .box7{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+
+            position: sticky;
+           left: 100px;
+           bottom: 200px;
+           /* when we scroll and this box come to top 100px then it will become sticky and scroll */
+           
+        }
+
+        .box9{
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+
+            position: fixed;
+            top:50px;
+            left: 400px;
+            /* in fixed the box will fixed and will become scrollable */
+        }
+    </style>
+</body>
+</html>

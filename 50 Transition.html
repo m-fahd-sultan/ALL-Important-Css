@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Hover me</div>
+
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background: pink;
+            border-radius: 0%  0% 0% 0%;
+
+            transition-property: width , height , border-radius , background;
+            /* properties on which we want to apply transtion will written here */
+           
+            transition-duration: 2s , 2s , 2s;
+            /* duration of transition */
+
+
+
+            /* ***\\\SHORTHAND///*** */
+            /* transition: width, height, background 2s,2s; */
+
+            /* transition: all 2s; */
+            /* here all use for all properties and 2s use for all. this is shortcut if you use same duratoin on everything */
+            
+          
+        }
+        .box:hover{
+            width: 300px;
+            background: orange;
+            border-radius: 0%  20% 0% 20%;
+        
+        }
+    </style>
+</body>
+</html>

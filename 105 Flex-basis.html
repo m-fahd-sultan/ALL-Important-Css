@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one </div>
+        <div class="item item2">two </div>
+        <div class="item item3">three </div>
+        <div class="item item4">four </div>
+        <div class="item item5">five </div>
+    </div>
+
+    <style>
+        .container{
+            background-color: #eee;
+            width: 50%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+            /*if we write flex-grow then it will cover the space of div and work like min-width*/
+            /*if we dont use flex-grow then it will work as a max-width and con't take the small space of div.*/
+            /* Rmove flex-grow to see the difference*/
+            flex-basis: 100px;
+        }
+        .item1{ background-color: aquamarine; flex-basis: 200px;}
+        /*this item will only compress when screen come to 200px.*/
+        .item2{background-color: orange;}
+    </style>
+</body>
+</html>

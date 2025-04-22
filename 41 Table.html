@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>this is table</caption>
+    <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>heading 3</th>
+    </tr>
+    <tr>
+        <td>hello world Lorem ipsum dolor sit amet consectetur</td>
+        <td>css</td>
+        <td>500</td>
+    </tr>
+    <tr>
+        <td>hello world</td>
+        <td>css</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>hello world</td>
+        <td>css</td>
+        <td>700</td>
+    </tr>
+  </table>
+
+  <style>
+    table{
+        border: 2px solid;
+        width: 300px;
+      
+        border-spacing: 10px;
+
+        border-collapse: separate; /*collapse/seperate(default)*/
+        /* we use collapse to make one line border for each cell */
+
+        empty-cells: hide;
+        /* use when we have an empty cell in a table */
+
+        table-layout: fixed;
+        /* it have two values auto and auto and fixed. In auto the width will increase with content and in fixed the table width will fixed */
+    }
+
+    td,th{
+        vertical-align: top;
+        padding: 5px;
+        border: 2px solid;
+    }
+    caption{
+        caption-side: bottom;
+        /* caption-side is use for the caption where you want e.g top of the table or bottom of the table. */
+    }
+
+    tr :hover{
+        background-color: gray;
+    }
+
+    tr:nth-child(even){
+        background-color: rgb(206, 206, 206);
+        /* use when we want to to apply something on even rows */
+    }
+
+  </style>
+</body>
+</html>

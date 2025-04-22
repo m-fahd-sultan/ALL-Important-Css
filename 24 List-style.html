@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>ABC</li>
+        <li>ABC</li>
+        <li>ABC</li>
+        <li>ABC</li>
+    </ul>
+    <ol>
+        <li>ABC</li>
+        <li>ABC</li>
+        <li>ABC</li>
+        <li>ABC</li>
+    </ol>
+
+    <style>
+        ul{
+            width: 400px;
+            border: 2px solid;
+            list-style-type: square;
+            /* use to change style of unorder list type. Properties of list-style-type are circle/square/disc/none */
+        
+            list-style-position: inside;
+            /* Position are Inside/outside */
+
+            list-style-image: url();
+            /* use to insert image in list */
+
+            /* ***\\\SHORTHAND///**** */
+            list-style: square inside url();
+        }
+
+        ol{
+            width: 400px;
+            border: 2px solid;
+            list-style-type: lower-roman;
+            /*use to change style of unorder list type. Properties of list-style-type are Upper/lower-alpha, Upper/lower-roman circle/square/disc/none */
+           
+            list-style-position: outside;
+            list-style-image: url();
+        }
+
+        /* List-Style Properties:
+         1) List-style-image  
+         2) List-style-position
+         3) List-style-type
+         4) List-style
+         */
+    </style>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">Linear Gradient1</div>
+    <div class="box2">Linear Gradient2</div>
+    <div class="box3">Linear Gradient3</div>
+    <div class="box4">Radial Gradient</div>
+    <div class="box5">Radial Gradient2</div>
+    <div class="box6">Radial Gradient3</div>
+
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            background: linear-gradient(to bottom, red, blue, yellow);
+            /* we simply write the direction before the colors like to top, top right etc. we can also give direction by degree values e.g 45deg, 90deg etc */ 
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            background: linear-gradient(120deg, red, rgba(255, 0, 0, 0.3));
+            /* we can give give colors by rgba */
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            /* ***\\\Multiple gradient///*** */
+            background: repeating-linear-gradient(to right, red, yellow,blue 20%);
+
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            background: radial-gradient(closest-side, red, blue);
+            /* In radial-gradient there are some values like closest-side,farthest-side, closest/farthest-corner */
+        }
+
+        .box5{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            background: radial-gradient(farthest-corner, red, blue);
+        }
+
+        .box6{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            background: repeating-radial-gradient(red 5%, yellow 20%,blue 30%)
+        }
+    </style>
+</body>
+</html>

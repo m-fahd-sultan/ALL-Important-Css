@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media queries</h1>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+        h1{
+            font-size: 48pt;
+            text-align: center;
+        }
+        @media screen and (max-width:1200px) {
+            body{
+                background-color: lightblue;
+            }
+            h1{
+                font-size: 32pt;
+            }
+        }
+
+        @media screen and (max-width:700px){
+            body{
+                background-color: lightgreen;
+            }
+            h1{
+                font-size: 18pt;
+            }
+        }
+        /* here we use @media screen which means this css will work on these width of screens.*/
+    </style>
+</body>
+</html>

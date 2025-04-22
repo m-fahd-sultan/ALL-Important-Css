@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="items header">header</div>
+        <div class="items menu">menu</div>
+        <div class="items box1">box1</div>
+        <div class="items box2">box2</div>
+        <div class="items sidebar">sidebar</div>
+        <div class="items content">content</div>
+        <div class="items footer"> footer</div>
+    </div>
+
+    <style>
+        .container{
+            background: #eee;
+            width: 720px;
+            margin: 45px auto 0;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 60px 100px 400px 50px;
+            grid-gap: 15px;
+
+    /* This is usable for small layout pages*/
+            grid-template-areas: "header header."
+                                 "menu menu menu"
+                                 "box1 box2 sidebar"
+                                 "content content sidebar"
+                                 "footer footer footer";
+            /* First we use gride-templates-areas and write for the names 3 times
+             beacuse there are 3 column in page so we write it 3 time to cover 3 columns.
+             If  we want any item to cover 2 columns then we will add (.). 
+             Note: write 3 names because there are 3 columns in it if one name is missing then everything will finish.  */
+        }
+
+        .header{
+            background: orangered; grid-area: header;}
+            /* we give name to every item so then we use these names in containers.*/
+
+        .menu{
+            background: yellowgreen; grid-area: menu;}
+
+        .box1{
+            background: mediumpurple; grid-area: box1; }
+
+        .box2{
+            background: hotpink; grid-area: box2;}
+
+        .sidebar{
+            background: royalblue; grid-area: sidebar;}
+
+        .content{
+            background:#7DCEA0; grid-area: content;}
+
+        .footer{
+            background: goldenrod; grid-area: footer;}
+    </style>
+</body>
+</html>

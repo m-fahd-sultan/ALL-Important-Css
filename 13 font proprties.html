@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aliquam deserunt praesentium laborum cupiditate quisquam, consectetur, maiores blanditiis quae nobis eaque accusamus mollitia alias cum est dolorem quasi ullam! Vitae.</div>
+    <div class="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo earum iusto sunt nostrum possimus fuga quae ipsam in praesentium, molestias minus voluptatibus! Reiciendis officiis itaque, porro ipsum molestias distinctio corrupti?</div>
+     <style>
+        body{
+            font-size: 12px;
+        }
+        .box{
+            width: 400px;
+            padding: 25px;
+            border: 2px solid;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        .box2{
+            font-family: Arial, Helvetica, sans-serif;
+            /* here the browser will use arial font and if arial font is not support by any browser then it will go for second font and so on */
+
+            font-size: 2em;
+            /* here the em will multiply with the body/parent font-size and apply it on box2 */
+           
+            line-height: 2em;
+            /* it will also work here according to font-size of parent(we can use it for line-height). we can also use px or %  */ 
+           
+            font-weight: bold;
+            /* we can use bold, bolder, light, lighter or by value e.g 500 etc */
+
+            font-style: italic;
+            /* if a font don't have italic version then we use oblique to italic the font. Both use for italic */ 
+        
+            font-variant: small-caps;
+            /* All the letter become capital and first letter of first word become little large from other letters */
+        }
+        
+
+     </style>
+</body>
+</html>

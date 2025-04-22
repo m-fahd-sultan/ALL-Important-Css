@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+        <div class="item item4">four</div>
+        <div class="item item5">five</div>
+        <div class="item item6">six</div>
+    </div>
+    <style>
+            .container{
+            background-color: gray;
+            border: 2px solid;
+             width: 80%;
+             margin: 70px 0 0 50px;
+             display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 150px 150px;
+            grid-gap: 20px;
+            }
+        .item1{background-color: lightskyblue;
+        grid-row: 2/3;
+        grid-column: 3/4;
+        z-index: 1;  
+    /* here we give z-index to item1 to bring it on item4 because it was hide behind the item6 */
+    }
+
+        .item2{background-color: lightgoldenrodyellow;}
+        .item3{background-color: seagreen;}
+
+        .item4{background-color: orange;
+        grid-row: 2/3;
+        grid-column: 2/4;}
+
+        .item5{background-color: lightgreen;}
+
+        .item6{background-color: mediumpurple;
+        grid-row: 1/2;
+        grid-column: 1/ span 3;
+        /* span 3 meand it will take 3 column space}
+    </style>
+</body>
+</html>

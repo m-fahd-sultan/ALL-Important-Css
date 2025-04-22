@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel maiores dolorem minima assumenda minus, exercitationem, deleniti aut perspiciatis et qui, tenetur labore amet corporis veritatis pariatur voluptatibus omnis dignissimos dolores!</div>
+    <textarea name="text" id="" cols="30" rows="10"></textarea>
+    
+    <style>
+        .box{
+            width: 80px;
+            height: 80px;
+            overflow: auto;
+
+            resize: vertical;
+            resize: horizontal;
+
+            resize: both;
+            /*if we have text overflowing then we can use resize for the box so that box can be resizable */
+            /* To achive resze first we use overflow on box */
+
+            
+        }
+        textarea{
+            resize: horizontal;
+            /* textarea is already resizable so if we want to resize in one direction then we can use resize: vertical/horizantal */
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"><h3>Paragraph</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum rerum. Blanditiis ipsa eaque odio beatae ipsam distinctio nostrum commodi a doloribus eum! Repellat voluptates ab iure sit explicabo. Debitis!</div>
+
+    <style>
+        .box{
+            width: 400px;
+            padding: 10px;
+            border: 2px solid;
+
+            column-count: 3;
+            /* to make columns */
+
+            column-gap: 50px;
+            /* gap between columns */
+
+            column-rule-style: dotted;
+            column-rule-width: 2px;
+            column-rule-color: blue;
+
+            /* ***\\\Shorthand///*** */
+            column-rule: 2px dotted blue;
+
+            column-width: 50px;
+            /* use for width of columns. if we use column-width then no need to write column-count */
+
+        }
+
+        h3{
+            column-span: all ;
+            /* use when we want heading out of columns so the columns size will be same */
+        }
+    </style>
+    
+</body>
+</html>

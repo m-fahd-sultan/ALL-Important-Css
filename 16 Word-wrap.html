@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet aaaaaaaaaaaaaaaaaasdfmeeeeeeeeet  ipsum dolor sit amet amet  consectetur adipisicing elit. Saepe itaque ratione qui vitae quo voluptatum soluta iste reiciendis magni officia illum nulla atque ut quia non, quas, deserunt ab. Sequi.</div>
+    <div class="box2">Lorem ipsum dolor sit amet aaaaaaaaaaaaaaaaaasdfmeeeeeeeeet  ipsum dolor sit amet amet  consectetur adipisicing elit. Saepe itaque ratione qui vitae quo voluptatum soluta iste reiciendis magni officia illum nulla atque ut quia non, quas, deserunt ab. Sequi.</div>
+
+    <style>
+        .box{
+            width: 200px;
+            padding: 10px;
+            border: 2px solid;
+
+            word-wrap: break-word;
+            /* if word is too long and not complete in one line it will break the word */
+        }
+
+        .box2{
+            width: 200px;
+            padding: 10px;
+            border: 2px solid;
+            margin-top: 20px;
+
+            word-break: break-all;
+            /* it will also break the word but it will apply break on every letter */
+        }
+
+        /* Word-wrap properties:
+            1> break-word  2> normal
+
+            Word-break properties:
+            1> break-all  2> keep-all(default)
+            */
+    </style>
+</body>
+</html>

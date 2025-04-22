@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+        <div class="item item4">four</div>
+        <div class="item item5">five</div>
+        <div class="item item6">six</div>
+        <div class="item item7">seven</div>
+        <div class="item item8">eight</div>
+    </div>
+    <style>
+        .container{
+            background: gray;
+            width: 650px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2, 120px);
+            grid-gap: 15px;
+
+            align-items: center;
+            /*Align-item use for vertical alignment. values are start, center, end and startch(default)*/
+
+            justify-items: center;
+            /* Use for horizental alignment. values are start, center, end and stretch*/
+
+            /* ***\\\Shorthand for align and justify item///*** */
+            place-items: center center ;
+
+        }
+        .item1{background-color: skyblue;}
+        .item2{background-color: lightgoldenrodyellow; 
+            align-self: start;/*For v-self alignment*/
+            justify-self: end;/*For h-self alignment*/
+            place-self: start end;/*Shorthand for both. first for align and second for justify.*/ }
+
+        .item3{background-color: seagreen; grid-row: span 3;}
+        .item4{background-color: orange; }
+        .item5{background-color: lightgreen;}
+        .item6{background-color: bisque;}
+        .item7{background-color: orange; grid-column: span 2;}
+        .item8{background-color: magenta;}
+    </style>
+</body>
+</html>
